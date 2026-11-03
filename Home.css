@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+}
+
+.home {
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  padding: 80px 10%;
+  background: linear-gradient(110deg, #111, #292929);
+  color: white;
+}
+
+.hero-content {
+  max-width: 750px;
+}
+
+.hero-subtitle {
+  font-size: 14px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 58px;
+  line-height: 1.1;
+  margin: 0 0 25px;
+}
+
+.hero-description {
+  max-width: 600px;
+  color: #ccc;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 15px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.primary-btn {
+  background: white;
+  color: #111;
+}
+
+.secondary-btn {
+  border: 1px solid white;
+  color: white;
+}
+
+/* BOOKING */
+
+.booking-section {
+  padding: 0 10%;
+  margin-top: -50px;
+  position: relative;
+}
+
+.booking-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr auto;
+  gap: 20px;
+  align-items: end;
+}
+
+.booking-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.booking-item label {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.booking-item input {
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.search-btn {
+  padding: 14px 25px;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* WHY US */
+
+.why-home {
+  padding: 110px 10%;
+  text-align: center;
+}
+
+.section-label {
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.why-home h2,
+.popular-section h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.home-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.home-feature {
+  padding: 35px 25px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.feature-icon {
+  font-size: 42px;
+}
+
+.home-feature h3 {
+  font-size: 20px;
+}
+
+.home-feature p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* POPULAR CARS */
+
+.popular-section {
+  padding: 90px 10%;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.car-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.car-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.car-image {
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eaeaea;
+  font-size: 90px;
+}
+
+.car-info {
+  padding: 25px;
+}
+
+.car-info h3 {
+  font-size: 23px;
+  margin-bottom: 8px;
+}
+
+.car-info p {
+  color: #777;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.price span {
+  font-size: 14px;
+  color: #777;
+  font-weight: normal;
+}
+
+.rent-btn {
+  display: block;
+  text-align: center;
+  padding: 13px;
+  background: #111;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* CTA */
+
+.home-cta {
+  padding: 90px 10%;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.home-cta h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.home-cta p {
+  color: #ccc;
+  font-size: 17px;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 30px;
+  background: white;
+  color: #111;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .booking-box {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home-features {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .car-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .hero {
+    padding: 70px 6%;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .booking-section {
+    padding: 0 6%;
+  }
+
+  .booking-box {
+    grid-template-columns: 1fr;
+  }
+
+  .home-features {
+    grid-template-columns: 1fr;
+  }
+
+  .why-home,
+  .popular-section {
+    padding: 70px 6%;
+  }
+}
